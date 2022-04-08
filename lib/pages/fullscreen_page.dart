@@ -1,5 +1,7 @@
 import 'dart:typed_data';
+
 import 'package:dio/dio.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
@@ -23,7 +25,6 @@ class _FullScreenState extends State<FullScreen> {
   var setwallbar=false;
 
 
-  // Function to save image to gallery.
   _save() async{
 
     setState(() {

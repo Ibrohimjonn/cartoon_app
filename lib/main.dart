@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Multi Cartoon',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'GoogleSans',
+          primarySwatch: Colors.blue,
+          fontFamily: 'GoogleSans',
           canvasColor: Colors.white,
-        primaryIconTheme: IconThemeData(color: Colors.black)
+          primaryIconTheme: IconThemeData(color: Colors.black)
       ),
-      home: Feed_Page(0),
+      home: Feed_Page(),
     );
   }
 }
