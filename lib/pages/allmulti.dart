@@ -75,7 +75,7 @@ class _All_MultiState extends State<All_Multi> {
         ),
       ),
       body: StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance.collection(_getGenre('multiamerica')).snapshots(),
+          stream: FirebaseFirestore.instance.collection(_getGenre('allmulti')).snapshots(),
           builder:(BuildContext context,AsyncSnapshot <QuerySnapshot>snapshot){
             if(snapshot.hasError) {
               return Center(child: Text("Failed to load Wallpaper..",style:TextStyle(color: Colors.black,fontSize: 25)));
@@ -85,8 +85,8 @@ class _All_MultiState extends State<All_Multi> {
                 return Center(
                     child: CircularProgressIndicator(
                       strokeWidth: 3,
-                      valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF6C63FF)),
-                      backgroundColor: Colors.white,
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.pink.shade200),
+                      backgroundColor: Color(0xffE5EBF0),
                     ));
               default:
                 return GridView.builder(
@@ -118,7 +118,13 @@ class _All_MultiState extends State<All_Multi> {
                             child: CachedNetworkImage(
                               imageUrl: higher,
                               fit: BoxFit.cover,
-                              placeholder: (context,url) => Image.asset("assets/images/loading.gif"),
+                              placeholder: (context,url) => Center(
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 3,
+                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.pink.shade200),
+                                  backgroundColor: Color(0xffE5EBF0),
+                                ),
+                              ),
                             ),
                           ),
                         ),

@@ -21,7 +21,7 @@ class _FullScreenState extends State<FullScreen> {
   static const platform = const MethodChannel("com.flutter.epic/epic");
   bool isPressed=false;
   var progress;
-  var _setWallpaper="blackpink";
+  var _setWallpaper="...";
   var setwallbar=false;
 
 
@@ -46,7 +46,6 @@ class _FullScreenState extends State<FullScreen> {
     }
   }
 
-  // This funtion is used to download the image to local memory.
   Future _download(var value, var width) async{
 
     Dio dio = new Dio();
@@ -72,7 +71,6 @@ class _FullScreenState extends State<FullScreen> {
 
   }
 
-  // After image is localy saved it will set the wallpaper based on user choice.
   Future _setWall(var value)async{
     String setWallpaper;
     try{
@@ -132,10 +130,8 @@ class _FullScreenState extends State<FullScreen> {
                         }
                         return Center(
                           child: CircularProgressIndicator(
-                            value: loadingProgress.expectedTotalBytes != null
-                                ? loadingProgress.cumulativeBytesLoaded /
-                                loadingProgress.expectedTotalBytes!
-                                : null,
+                            valueColor: AlwaysStoppedAnimation<Color>(Colors.pink.shade200),
+                            backgroundColor: Color(0xffE5EBF0),
                           ),
                         );
                       },

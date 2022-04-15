@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Settings_Page extends StatefulWidget {
   const Settings_Page({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _Settings_PageState extends State<Settings_Page> {
         backgroundColor: Colors.white,
         actions: [
           GestureDetector(
-            child: Icon(CupertinoIcons.star,color: Colors.grey,),
+            child: Icon(CupertinoIcons.info,color: Colors.grey,size: 24,),
             onTap: (){
               print('tapped');
             },
@@ -33,7 +34,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -57,7 +58,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -81,7 +82,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -105,7 +106,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -129,14 +130,14 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
                 elevation: 0,
                 animationDuration: Duration(milliseconds: 150),
               ),
-              icon: Icon(CupertinoIcons.arrow_3_trianglepath,color: Color(0xff999A9A),),
+              icon: Icon(MdiIcons.atom,color: Color(0xff999A9A),),
               label: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
@@ -153,7 +154,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -177,7 +178,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
@@ -201,7 +202,7 @@ class _Settings_PageState extends State<Settings_Page> {
             child: ElevatedButton.icon(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(335,55),
+                minimumSize: Size(342,56),
                 alignment: Alignment.centerLeft,
                 primary: Color(0xffE5EBF0),
                 onPrimary: Colors.black,
